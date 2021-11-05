@@ -1,0 +1,46 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+.txt_police
+{
+    font-family: 'Roboto', sans-serif;
+}
+/*Color*/
+.color_background
+{
+    background-color: #F2F2F2;
+}
+/*size title*/
+.size_text_title
+{
+    font-size: 1.5em;
+}
+/*size header*/
+.size_block_icon
+{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+.size_location
+{
+    width: 100%;
+    height: 40px;
+}
+.size_block_title
+{
+    width: 100%;
+    height: 60px;
+}
+.arnd_header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin_location
+{
+    margin-left:10px;
+}
