@@ -7,10 +7,15 @@
 {
     font-family: 'Roboto', sans-serif;
 }
+/*HEADER*/
 /*Color*/
 .color_background
 {
     background-color: #F2F2F2;
+}
+.txt_bold
+{
+    font-weight: bold;
 }
 /*size title*/
 .size_text_title
@@ -31,8 +36,28 @@
 }
 .size_block_title
 {
+    padding-top: 40px;
     width: 100%;
-    height: 60px;
+}
+.size_block_exploration
+{
+    width: 100%;
+    height: 262px;
+}
+.size_btn_exploration
+{
+    width: 200px;
+    height: 50px;
+}
+.btn
+{
+    background-color: #9356DC ;
+    color: white;
+   border: none;
+}
+.btn_rounded
+{
+    border-radius: 50px ;
 }
 .arnd_header
 {
@@ -40,7 +65,109 @@
     justify-content: center;
     align-items: center;
 }
-.margin_location
+.margin_icon_location
 {
     margin-left:10px;
+}
+.margin_title
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*Fonctionnement*/
+.size_filter
+{
+    width: 300px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.filter_rounded
+{
+    border-radius: 20px;
+}
+.margin_icon_fonctionnement
+{
+    margin-left: 20px;
+}
+.size_icon
+{
+    font-size: 20px;
+    color: #808080;
+}
+
+.fondfiltres 
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%; 
+    position: absolute;
+    margin-left: -300px;
+}
+.color_background_filter
+{
+    background-color: #9356DC;
+}
+
+/*restaurant*/
+.restaurants
+{
+    background-color: #F2F2F2;
+    padding-bottom: 50px;
+}
+
+.card
+{
+    border-radius: 20px;
+    background-color:white;
+    width: 300px;
+    height: 215px;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    margin-bottom: 20px;
+}
+.card_picture
+{
+    object-fit: cover;
+    width: 300px;
+    height:150px;
+    border-radius: 20px 20px 0 0;
+}
+.card_footer
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.block >a
+{
+    text-decoration: none;
+    color: black;
+}
+/*footer*/
+.footer
+{
+    background-color: #3b3b3b;
+}
+.footer__block
+{
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__logo
+{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 1.3em;
+    margin-left: -50px;
+}
+ul{
+    list-style: none;
+}
+ul.footer__list > li > a
+{
+    color: white;
+    text-decoration: none;
 }
