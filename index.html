@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css"/>
+            <link rel="stylesheet" href="public/css/style.css"/>
             <script src="https://kit.fontawesome.com/2dfd58bbfe.js" crossorigin="anonymous"></script>
             <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
@@ -15,15 +15,15 @@
                 <div class="arnd_header size_block_icon">
                     <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg">
                 </div>
-                <div class="arnd_header size_location color_background">
+                <div class="arnd_header size_location color_background_location">
                     <i class="fas fa-map-marker-alt"></i>
                     <p class="margin_icon_location txt_bold">Paris, Belleville</p>
                 </div>
-                <div class="size_block_exploration color_background">
+                <div class="size_block_exploration color_background_header">
                     <div class="size_block_title">
                         <h1 class="size_text_title arnd_header">Réservez le menu qui</h1>
                         <h1 class="size_text_title arnd_header">vous convient</h1>
-                        <div class="margin_title">
+                        <div class="margin_title_exploration">
                             <p class="arnd_header">Découvrez des restaurants d'exception,</p>
                             <p class="arnd_header">séléctionnés par nos soins.</p>
                         </div>
@@ -33,46 +33,52 @@
                     </div>
                 </div>
             </header>
-            <section>
-               <h2 class="size_text_title">Fonctionnement</h2>
+            <section class="block_fonctionnement">
+               <h2 class="size_text_title margin_title_fonctionnement arnd_header">Fonctionnement</h2>
                 <div class="arnd_header">
-                    <div class=" size_filter color_background filter_rounded arnd_header">
-                        <div class="fondfiltres color_background_filter arnd_header">
-                            <p>1</p>
+                    <a href="#" style=display:block;>
+                        <div class="size_filter color_background_card_filter filter_rounded arnd_header">
+                            <div class="fondfiltres color_background_filter arnd_header">
+                                <p>1</p>
+                            </div>
+                            <div class="arnd_header">
+                                <i class="size_icon fas fa-mobile-alt"></i>
+                                <p class="margin_icon_fonctionnement txt_bold">Choisissez un restaurant</p>
+                            </div>
                         </div>
-                        <div class="arnd_header" >
-                            <i class=" size_icon fas fa-mobile-alt"></i>
-                            <p class="margin_icon_fonctionnement txt_bold">Choisissez un restaurant</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="arnd_header">
-                    <div class=" size_filter color_background filter_rounded arnd_header">
-                        <div class="fondfiltres color_background_filter arnd_header">
-                            <p>2</p>
+                    <a href="#" style=display:block;>
+                        <div class=" size_filter color_background_card_filter filter_rounded arnd_header">
+                            <div class="fondfiltres color_background_filter arnd_header">
+                                <p>2</p>
+                            </div>
+                            <div class="arnd_header" >
+                                <i class=" size_icon fas fa-list-ul"></i>
+                                <p class="margin_icon_fonctionnement txt_bold">Composez votre menu</p>
+                            </div>
                         </div>
-                        <div class="arnd_header" >
-                            <i class=" size_icon fas fa-list-ul"></i>
-                            <p class="margin_icon_fonctionnement txt_bold">Choisissez un restaurant</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="arnd_header">
-                    <div class=" size_filter color_background filter_rounded arnd_header">
-                        <div class="fondfiltres color_background_filter arnd_header">
-                            <p>3</p>
+                    <a href="#" style=display:block;>
+                        <div class=" size_filter color_background_card_filter filter_rounded arnd_header">
+                            <div class="fondfiltres color_background_filter arnd_header">
+                                <p>3</p>
+                            </div>
+                            <div class="arnd_header" >
+                                <i class=" size_icon fas fa-store"></i>
+                                <p class="margin_icon_fonctionnement txt_bold">Dégustez au restaurant</p>
+                            </div>
                         </div>
-                        <div class="arnd_header" >
-                            <i class=" size_icon fas fa-store"></i>
-                            <p class="margin_icon_fonctionnement txt_bold">Choisissez un restaurant</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </section>
             <section class="restaurants">
-                <h2>Restaurants</h2>
-                <div class="arnd_header">
-                    <div class="block">
+                <h2 class="size_text_title margin_title_restaurant arnd_header">Restaurants</h2>
+                <div class="arnd_header block_restaurant">
+                    <div class="block_card_restaurant">
                         <a class="card" href="#" style=display:block;>
                             <img class="card_picture" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                             <footer class="card_footer">
@@ -81,7 +87,7 @@
                                     <p>Ménilmontant</p>   
                                 </div>
                                 <div  class="space_between">
-                                    <i class="far fa-heart"></i>
+                                    <i class="card_logo__heart far fa-heart"></i>
                                 </div>
                             </footer>
                         </a>
@@ -93,11 +99,11 @@
                                     <p>Charonne</p>   
                                 </div>
                                 <div  class="space_between">
-                                    <i class="far fa-heart"></i>
+                                    <i class="card_logo__heart far fa-heart"></i>
                                 </div>
                             </footer>
                         </a>
-                        <a class="card" href="#" style=display:block;>
+                        <a class="card" href="MenuFrancaise.html" style=display:block;>
                             <img class="card_picture" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
                             <footer class="card_footer">
                                 <div>
@@ -105,7 +111,7 @@
                                     <p>Cité Rouge</p>   
                                 </div>
                                 <div  class="space_between">
-                                    <i class="far fa-heart"></i>
+                                    <i class="card_logo__heart far fa-heart"></i>
                                 </div>
                             </footer>
                         </a>
@@ -117,7 +123,7 @@
                                     <p>Folie-Méricourt</p>   
                                 </div>
                                 <div  class="space_between">
-                                    <i class="far fa-heart"></i>
+                                    <i class="card_logo__heart far fa-heart"></i>
                                 </div>
                             </footer>
                         </a>
@@ -128,8 +134,8 @@
                 <div class="footer__block">
                     <p class="footer__logo">ohmyfood </p>
                     <ul class="footer__list">
-                        <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                        <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+                        <li><a href="#"><i class="footer_size_logo__cook footer_margin_logo__cook fas fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="footer_size_logo__hands footer_margin_logo__hands fas fa-hands-helping"></i> Devenir partenaire</a></li>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

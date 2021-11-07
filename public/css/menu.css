@@ -1,0 +1,46 @@
+.arrow
+{
+    font-size: 20px;
+    color: grey;
+    left: 28px;
+    top: 23px;
+    position: absolute;
+}
+.menu_between
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_picture--modif
+{
+    width: 100%;
+    height: 200px;
+    
+}
+
+.container_Menu
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 0 0;
+    margin-top: -40px;
+    padding: 20px;
+}
+.color_background_card_filter--modif
+{
+    background-color: white;
+}
+.size_filter--modif
+{
+    height: 80px;
+    margin-bottom: 20px;
+}
+.size_btn_commander
+{
+    width: 150px;
+    height: 50px; 
+}
