@@ -7,19 +7,6 @@
   font-family: 'Roboto', sans-serif; }
 
 /*HEADER*/
-/*Color*/
-.color_background_header {
-  background-color: #F2F2F2; }
-
-.color_background_card_filter {
-  background-color: #F2F2F2; }
-
-.color_background_filter {
-  background-color: #9356DC; }
-
-.color_background_location {
-  background-color: #e4e4e4; }
-
 .txt_bold {
   font-weight: bold; }
 
@@ -32,43 +19,44 @@
   width: 100%;
   height: 40px;
   padding-top: 35px;
-    padding-bottom: 25px;}
-
-.size_location {
-  width: 100%;
-  height: 40px; }
-
-.size_block_title {
-  padding-top: 40px;
-  width: 100%; }
-
-.size_block_exploration {
-  width: 100%;
-  height: 262px; }
-
-.size_btn_exploration {
-  width: 200px;
-  height: 50px; }
-
-.btn {
-  background-color: #9356DC;
-  color: white;
-  border: none; }
-
-.btn_rounded {
-  border-radius: 50px; }
+  padding-bottom: 25px; }
 
 .arnd_header {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.margin_icon_location {
-  margin-left: 10px; }
+.size_location {
+  width: 100%;
+  height: 40px;
+  background: #e4e4e4; }
+  .size_location .margin_icon_location {
+    margin-left: 10px; }
+
+.size_block_exploration {
+  width: 100%;
+  height: 262px;
+  background: #F2F2F2; }
+
+.size_block_title {
+  padding-top: 40px;
+  width: 100%; }
 
 .margin_title_exploration {
   margin-top: 10px;
   margin-bottom: 20px; }
+
+.size_btn_exploration {
+  width: 200px;
+  height: 50px; }
+
+.btn_rounded {
+  border-radius: 50px; }
+
+.btn {
+  background: #9356DC;
+  color: white;
+  border: none; }
 
 /*Fonctionnement*/
 .block_fonctionnement {
@@ -82,10 +70,11 @@
   width: 287.5px;
   height: 80px;
   margin-bottom: 30px;
-  margin-left: 12.5px; }
+  margin-left: 12.5px;
+  background-color: #F2F2F2; }
 
 .color_background_card_filter:hover {
-  background-color: #9256dc38; }
+  background: #9256dc38; }
 
 .size_filter:hover > .size_icon {
   color: #9356DC; }
@@ -105,7 +94,8 @@
   width: 25px;
   border-radius: 50%;
   position: absolute;
-  margin-left: -287.5px; }
+  margin-left: -287.5px;
+  background-color: #9356DC; }
 
 /*restaurant*/
 .margin_title_restaurant {
@@ -190,5 +180,7 @@ ul.footer__list > li {
 a {
   color: black;
   text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

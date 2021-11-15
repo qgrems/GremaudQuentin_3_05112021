@@ -1,0 +1,19 @@
+{
+  "name": "p3_gremaud_quentin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qgrems/P3_Gremaud_Quentin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qgrems/P3_Gremaud_Quentin/issues"
+  },
+  "homepage": "https://github.com/qgrems/P3_Gremaud_Quentin#readme"
+}

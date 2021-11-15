@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
 }
 
 .card_picture--modif
@@ -22,7 +23,7 @@
 
 .container_Menu
 {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #F2F2F2;
@@ -38,9 +39,33 @@
 {
     height: 80px;
     margin-bottom: 20px;
+    padding: 1rem;
 }
 .size_btn_commander
 {
     width: 150px;
     height: 50px; 
+}
+.footer--modif
+{
+    background-color: #3b3b3b;
+    margin-top: 15000px;
+}
+.menu_size_txt
+{
+    font-size: 1.1em;
+}
+.menu_title
+{
+    font-family: 'Shrikhand', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+.menu_sous_title
+{
+    padding-bottom: 10px;
+    font-weight: 50;
+    color: rgba(0, 0, 0, 0.534);
 }
