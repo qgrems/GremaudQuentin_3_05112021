@@ -1,0 +1,80 @@
+.size_location {
+    width: 100%;
+    height: 40px;
+    background: $wbeige; }
+  
+    .size_location .margin_icon_location {
+      margin-left: 10px; }
+  
+  .block_exploration {
+    width: 100%;
+    height: 262px;
+    background: $beige; 
+  
+    &__title {
+      padding-top: 40px;
+      width: 100%; 
+    }
+    &__margin{
+      margin-top: 10px;
+      margin-bottom: 20px; }
+  }
+
+
+  .restaurants {
+    background-color: $beige;
+    padding-bottom: 50px;
+    padding-top: 35px; 
+    &__margin_title{
+      padding: 20px; }
+  }
+  .card{
+    &__footer{
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__heart
+    {
+      font-size: 25px;
+    }
+  }
+  
+  
+  .block_restaurant {
+    padding: 20px; 
+    &__card > a {
+      text-decoration: none;
+      color: $black; }
+    }
+
+    .fondfiltres {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: -45px;
+      background-color: $purple;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     /*Fonctionnement*/
+.block_fonctionnement {
+  padding-top: 35px; 
+
+  &__margin_title {
+    padding: 20px; } 
+}
+.color_background_card_filter:hover {
+  background: $dark_purple; }
+
+.size_filter:hover > .size_icon {
+  color: $purple; }
+
+.filter_rounded {
+  border-radius: 20px; }
+
+.margin_icon_fonctionnement {
+  margin-left: 40px; }

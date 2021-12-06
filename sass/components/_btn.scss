@@ -1,16 +1,149 @@
-.size_btn_exploration 
-{
+
+.btn {
+  background: rgb(255,121,223);
+  background: linear-gradient(150deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
+  color: $white;
+  border: none; 
+  &__rounded{
+    border-radius: 50px; 
+  }
+  &__exploration_size
+  {
     width: 200px;
     height: 50px; 
+  }
 }
 
-.btn_rounded 
-{
-    border-radius: 50px; 
+
+@media all and (max-width:600px)
+{  
+  .card_filter_fonctionnement {
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 32.5px;
+    padding: 2rem;
+    &__color
+    {
+     background-color: $beige;
+    }
+   }
+
+  .card {
+    border-radius: 20px;
+    background-color: $white;
+    width: 100%;
+    height: 215px;
+    box-shadow: 2px 2px 2px 2px $beige;
+    margin-bottom: 20px;
+    &_picture {
+      object-fit: cover;
+      width:100%;
+      height: 150px;
+      border-radius: 20px 20px 0 0; }
+  }
+    .footer_block {
+      width: 68%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &__logo {
+        font-family: 'Shrikhand', cursive;
+        color: $white;
+        font-size: 1.3em;
+        margin-left: 20px;
+        margin-bottom: 10px; }
+      }
 }
-.btn 
+
+@media all and (min-width:600px)
 {
-  background:$purple;   
-  color: white;
-  border: none; 
+  .block_exploration{
+    height: 200px;
+    &__btw{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .block_fonctionnement { 
+    justify-content: center;
+    align-items: center;
+    &__btw
+    {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    &__title
+    {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    &__center{
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  
+  .card_filter_fonctionnement {
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 32.5px;
+    padding: 2rem;
+    &__color
+    {
+      background-color: $beige;
+    }
+  }
+  .restaurants {
+    &__margin_title{
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  }
+  .block_restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__card {
+      text-decoration: none;
+      color: $black; 
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;}
+    }
+    .card {
+      border-radius: 20px;
+      background-color: $white;
+      width: 75%;
+      max-width: 400px;
+      height: 215px;
+      box-shadow: 2px 2px 2px 2px $beige;
+      ;
+      margin-bottom: 20px; 
+      &_picture {
+        object-fit: cover;
+        width:100%;
+        height: 150px;
+        border-radius: 20px 20px 0 0; }}
+
+        .footer_block {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          &__logo {
+            font-family: 'Shrikhand', cursive;
+            color: $white;
+            font-size: 1.3em;
+            margin-left: 20px;
+            margin-bottom: 10px; }
+        }
 }
