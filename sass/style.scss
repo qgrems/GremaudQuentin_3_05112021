@@ -2,169 +2,237 @@
 @import "./base/fondations";
 @import "./components/btn";
 
-  /*size header*/
-  .size_block_icon {
-    width: 100%;
-    height: 40px;
-    padding-top: 35px;
-    padding-bottom: 25px;}
 
-    .arnd_header 
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-    }
-    .size_location 
-    {
-        width: 100%;
-        height: 40px; 
-        background: $wbeige;      
-        .margin_icon_location 
-        {
-            margin-left: 10px;
-        }     
-    }
-    .size_block_exploration 
-    {
-        width: 100%;
-        height: 262px; 
-        background: $beige;
-    }
-    .size_block_title 
-    {
-        padding-top: 40px;
-        width: 100%; 
-    }
-    .margin_title_exploration 
-    {
-        margin-top: 10px;
-        margin-bottom: 20px; 
-    }
-  /*Fonctionnement*/
-    .block_fonctionnement 
-    {
-        padding-top: 35px; 
-    }
-    
-  .margin_title_fonctionnement {
-    margin-left: -128.5px;
-    padding-bottom: 20px; }
-  
-    .size_filter 
-    {
-        width: 287.5px;
-        height: 80px;
-        margin-bottom: 30px;
-        margin-left: 12.5px; 
-        background-color: $beige;
-    }
-    .color_background_card_filter:hover{
-        background: $dark_purple;
-    }
-  
-  .size_filter:hover > .size_icon {
-    color: $purple; }
-  
-  .filter_rounded {
-    border-radius: 20px; }
-  
-  .margin_icon_fonctionnement {
-    margin-left: 20px; }
-  
-  .size_icon {
-    font-size: 20px;
-    color: #808080; }
-  
-  .fondfiltres {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    position: absolute;
-    margin-left: -287.5px;
-    background-color: $purple; }
-  
-  /*restaurant*/
-  .margin_title_restaurant {
-    margin-left: -170px; }
-  
-  .restaurants {
-    background-color: #F2F2F2;
-    padding-bottom: 50px;
-    padding-top: 35px; }
-  
-  .card {
-    border-radius: 20px;
-    background-color: white;
-    width: 300px;
-    height: 215px;
-    box-shadow: 2px 2px 2px 2px #F2F2F2;
+/*size header*/
+.size_block_icon {
+  width: 100%;
+  height: 40px;
+  padding-top: 35px;
+  padding-bottom: 25px; }
+
+.arnd_header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.size_location {
+  width: 100%;
+  height: 40px;
+  background: $wbeige; }
+
+  .size_location .margin_icon_location {
+    margin-left: 10px; }
+
+.block_exploration {
+  width: 100%;
+  height: 262px;
+  background: $beige; 
+
+  &__title {
+    padding-top: 40px;
+    width: 100%; 
+  }
+  &__margin{
+    margin-top: 10px;
     margin-bottom: 20px; }
-  
-  .card_picture {
-    object-fit: cover;
-    width: 300px;
-    height: 150px;
-    border-radius: 20px 20px 0 0; }
-  
-  .card_footer {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  
-  div.block_card_restaurant > a {
-    text-decoration: none;
-    color: black; }
-  
-  .block_restaurant {
-    padding-top: 20px; }
-  
-  .card_logo__heart {
-    font-size: 25px; }
-  
-  /*footer*/
-  .footer {
-    background-color: #3b3b3b; }
-  
+}
+
+.btn_exploration_size {
+  width: 200px;
+  height: 50px; }
+
+.btn_rounded {
+  border-radius: 50px; }
+
+.btn {
+  background: rgb(255,121,223);
+  background: linear-gradient(150deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
+  color: $white;
+  border: none; }
+
+/*Fonctionnement*/
+.block_fonctionnement {
+  padding-top: 35px; 
+
+  &__margin_title {
+    padding: 20px; } 
+}
+.color_background_card_filter:hover {
+  background: $dark_purple; }
+
+.size_filter:hover > .size_icon {
+  color: $purple; }
+
+.filter_rounded {
+  border-radius: 20px; }
+
+.margin_icon_fonctionnement {
+  margin-left: 40px; }
+
+.size_icon {
+  font-size: 20px;
+  position: absolute;
+  color: $grey; }
+
+
+
+/*restaurant*/
+.margin_title_restaurant {
+  margin-left: -170px; }
+
+.restaurants {
+  background-color: $beige;
+  padding-bottom: 50px;
+  padding-top: 35px; }
+
+.card_footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+div.block_card_restaurant > a {
+  text-decoration: none;
+  color: $black; }
+
+.block_restaurant {
+  padding: 20px; }
+
+.card_logo__heart {
+  font-size: 25px; }
+
+/*footer*/
+.footer {
+  background-color: $dark_grey; }
+
+.footer_size_logo__cook {
+  font-size: 12px; }
+
+.footer_size_logo__hands {
+  font-size: 10px; }
+
+.footer_margin_logo__cook {
+  margin-right: 9px; }
+
+.footer_margin_logo__hands {
+  margin-right: 3px; }
+
+ul {
+  list-style: none; }
+
+ul.footer__list > li > a {
+  color:$white;
+  text-decoration: none;
+  padding: 20px;}
+
+ul.footer__list > li {
+  margin-bottom: 5px; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
   .footer__block {
     width: 68%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    &__logo {
+      font-family: 'Shrikhand', cursive;
+      color: $white;
+      font-size: 1.3em;
+      margin-left: 20px;
+      margin-bottom: 10px; }
+    }
   
-  .footer__logo {
-    font-family: 'Shrikhand', cursive;
-    color: white;
-    font-size: 1.3em;
-    margin-left: -72px;
-    margin-bottom: 10px;
-    margin-top: 15px; }
+    .fondfiltres {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: -45px;
+      background-color: $purple;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+@media all and (max-width:600px)
+{  
+  .card_filter_fonctionnement {
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 32.5px;
+    padding: 2rem;
+    &__color
+    {
+     background-color: $beige;
+    }
+   }
+
+  .card {
+    border-radius: 20px;
+    background-color: $white;
+    width: 100%;
+    height: 215px;
+    box-shadow: 2px 2px 2px 2px $beige;
+    margin-bottom: 20px;
+    &_picture {
+      object-fit: cover;
+      width:100%;
+      height: 150px;
+      border-radius: 20px 20px 0 0; }
+  }
+ 
+}
+
+@media all and (min-width:600px)
+{
+  .block_exploration{
+    height: 200px;
+    &__btw{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .block_fonctionnement { 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   
-  .footer_size_logo__cook {
-    font-size: 12px; }
-  
-  .footer_size_logo__hands {
-    font-size: 10px; }
-  
-  .footer_margin_logo__cook {
-    margin-right: 9px; }
-  
-  .footer_margin_logo__hands {
-    margin-right: 3px; }
-  
-  ul {
-    list-style: none; }
-  
-  ul.footer__list > li > a {
-    color: rgb(255, 255, 255);
-    text-decoration: none; }
-  
-  ul.footer__list > li {
-    margin-bottom: 5px; }
-  a {
-    color: black;
-    text-decoration: none; }
-  
-  /*# sourceMappingURL=style.css.map */
+  .flex_main
+  {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .card_filter_fonctionnement {
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 32.5px;
+    padding: 2rem;
+    &__color
+    {
+      background-color: $beige;
+    }
+  }
+
+    .card {
+      border-radius: 20px;
+      background-color: $white;
+      width: 75%;
+      max-width: 400px;
+      height: 215px;
+      box-shadow: 2px 2px 2px 2px $beige;
+      ;
+      margin-bottom: 20px; 
+      &_picture {
+        object-fit: cover;
+        width:100%;
+        height: 150px;
+        border-radius: 20px 20px 0 0; }}
+}
