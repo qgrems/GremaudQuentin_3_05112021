@@ -1,9 +1,14 @@
 
 .btn {
-  background: rgb(255,121,223);
-  background: linear-gradient(150deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
+  @include degrade;
+  &:hover
+  {
+    @include lighter_degrade;
+    @include box_shadow_modif;
+  }
   color: $white;
   border: none; 
+  @include  box_shadow;
   &__rounded{
     border-radius: 50px; 
   }
@@ -14,11 +19,39 @@
   }
 }
 
-
+.card__heart{
+    margin-top: -20px;
+    margin-right: 50px;
+  mix-blend-mode:normal;
+  .fas{
+    position: absolute;
+    opacity: 0;
+  }
+  .far{
+    position: absolute;
+  }
+  &:hover
+  {
+    transition-duration: 1000ms;
+    @include color_heart;
+    .far{
+      opacity: 0;
+    }    
+    .fas{
+      opacity: 1;
+      position: absolute;
+    }
+  }
+}
+.card {
+  @include  box_shadow($shadow);
+}
+.card_filter_fonctionnement {
+  @include  box_shadow($shadow);
+}
 @media all and (max-width:600px)
 {  
   .card_filter_fonctionnement {
-    height: 80px;
     margin-right: 20px;
     margin-bottom: 20px;
     margin-left: 32.5px;
@@ -34,7 +67,6 @@
     background-color: $white;
     width: 100%;
     height: 215px;
-    box-shadow: 2px 2px 2px 2px $beige;
     margin-bottom: 20px;
     &_picture {
       object-fit: cover;
@@ -125,7 +157,6 @@
       min-width: 400px;
       max-width: 500px;
       min-height: 215px;
-      box-shadow: 2px 2px 2px 2px $beige;
       margin-bottom: 20px; 
       &_picture {
         object-fit: cover;
