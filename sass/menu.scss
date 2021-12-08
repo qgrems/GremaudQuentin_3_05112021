@@ -1,7 +1,8 @@
 @import "./utils/variables";
 @import "./base/fondations";
 @import "./components/btn";
-@import "./style.scss"
+@import "./style.scss";
+
 
 .arrow
 {
@@ -11,18 +12,9 @@
     top: 23px;
     position: absolute;
 }
-.menu_between
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5px;
-}
 
-.color_background_card_filter--modif
-{
-    background-color: white;
-}
+
+
 
 .size_btn_commander
 {
@@ -34,24 +26,8 @@
     background-color: #3b3b3b;
     margin-top: 15000px;
 }
-.menu_size_txt
-{
-    font-size: 1.1em;
-}
-.menu_title
-{
-    font-family: 'Shrikhand', cursive;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 1.7em;
-    font-weight: 400;
-}
-.menu_sous_title
-{
-    padding-bottom: 10px;
-    font-weight: 50;
-    color: rgba(0, 0, 0, 0.534);
-}
+
+
 .container_Menu
 {
     position: relative;
@@ -61,16 +37,80 @@
     border-radius: 20px 20px 0 0;
     margin-top: -40px;
     padding: 20px;
+    .menu
+    {
+        &__between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+        }
+        &__title
+        {
+            font-family: 'Shrikhand', cursive;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 1.7em;
+            font-weight: 400;
+            padding: 1rem;
+        }
+        &__sous_title
+        {
+            padding-bottom: 10px;
+            font-weight: 50;
+            color: rgba(0, 0, 0, 0.534);
+            padding: 1rem;
+        }
+        &__flex
+        {
+            display: flex;
+        }
+
+        &__card
+        {
+            min-width: 300px;
+            height: 80px;
+            margin-bottom: 20px;
+            background-color: white;
+            overflow: hidden;
+        }
+        &__margin_price
+        {
+            margin-left: auto;
+            padding: 1rem;
+        }
+        &__block_check
+        {
+            width: 5rem;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #99E2D0;
+            margin-top: -55px;
+            margin-right: -5rem;
+        }
+        &__size_txt
+        {
+            font-size: 1.1em;
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+        &__padding
+        {
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+
+    }
+}
+.menu__card:hover{
+    transform: scaleX(1);
 }
 @media all and (max-width:1280px)
 {
-    .size_filter--modif
-    {
-        height: 80px;
-        margin-bottom: 20px;
-        padding: 1rem;
-    }
-    .card_picture--modif
+
+    .card_picture
     {
         width: 100%;
         max-height: 400px;
@@ -80,15 +120,7 @@
 }
 @media all and (min-width:1280px)
 {
-
-    .size_filter--modif
-    {
-       width: 400px;
-        height: 80px;
-        margin-bottom: 20px;
-        padding: 1rem;
-    }
-    .card_picture--modif
+    .card_picture
     {
         width: 100%;
         height: 500px; 
@@ -97,16 +129,11 @@
 }
 @media all and (min-width:600px) and (max-width:1280px)
 {
-    .size_filter--modif
-    {
-       width: 270px;
-        height: 80px;
-        margin-bottom: 20px;
-        padding: 1rem;
-    }
+
 }
 @media all and (min-width:600px)
 {
+
     .flex_entres
     {
         flex-wrap: wrap;
@@ -114,5 +141,4 @@
         justify-content: space-between;
         align-items: center;
     }
-   
 }

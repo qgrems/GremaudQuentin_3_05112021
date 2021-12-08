@@ -68,7 +68,7 @@
     width: 100%;
     height: 215px;
     margin-bottom: 20px;
-    &_picture {
+    &__picture {
       object-fit: cover;
       width:100%;
       height: 150px;
@@ -158,7 +158,7 @@
       max-width: 500px;
       min-height: 215px;
       margin-bottom: 20px; 
-      &_picture {
+      &__picture {
         object-fit: cover;
         width:100%;
         min-height: 150px;
