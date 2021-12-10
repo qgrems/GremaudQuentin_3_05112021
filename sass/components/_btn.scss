@@ -3,8 +3,9 @@
   @include degrade;
   &:hover
   {
-    @include lighter_degrade;
-    @include box_shadow_modif;
+    transition-duration: 1000ms;
+    background-color: darken($shadow, 95);
+    background: linear-gradient(150deg, rgba(255,121,223,1) 10%, rgba(176,119,255,1)78%);
   }
   color: $white;
   border: none; 

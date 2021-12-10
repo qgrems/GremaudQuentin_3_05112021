@@ -1,3 +1,143 @@
+.animation_loading
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  animation: white-page 5000ms;
+  animation-delay: 1ms;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader
+{
+ position: relative;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  &__bar
+  {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 6px solid rgb(252, 189, 237);
+
+  }
+}
+.loader__bar::after{
+  content:'';
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -6px;
+  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+  border: 6px solid transparent;
+  border-top-color:rgba(176,119,255,1);
+  -webkit-animation: spin 1s linear infinite ;
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); transform: rotate(0deg);
+  }
+  100%{-webkit-transform: rotate(360deg); transform: rotate(360deg);
+
+  }
+}
+@keyframes white-page
+{
+  0% {
+    
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40%{
+      opacity: 1;
+  }
+  50% {
+    opacity:1;
+  }
+  60% {
+    opacity: .8;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes loading-page
+{
+  0% {
+    background-color: white;
+    opacity: 0;
+  }
+  10% {
+    background-color: white;
+    opacity: 0.1;
+  }
+  20% {
+    background-color: white;
+    opacity: 0.2;
+  }
+  30% {
+    background-color: white;
+    opacity: 0.3;
+  }
+  40%{
+      background-color: white;
+      opacity: .4;
+  }
+  50% {
+    background-color: white;
+    opacity: .5;
+  }
+  60% {
+    background-color: white;
+    opacity: .6 ;
+  }
+  70% {
+    background-color: white;
+    opacity: 0.7;
+  }
+  80% {
+    background-color: white;
+    opacity: 0.8;
+  }
+  90% {
+    background-color: white;
+    opacity: 0.7;
+  }
+  100% {
+    background-color: white;
+    opacity: 1;
+  }
+}
+
+
 .size_location {
     width: 100%;
     height: 40px;

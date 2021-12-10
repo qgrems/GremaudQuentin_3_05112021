@@ -11,21 +11,15 @@ $shadow :rgb(0,0,0,0.10);
 $shadow_size :2px 2px 2px 2px;
 $shadow_modif :rgb(0,0,0,0.40);
 
-
 @mixin box_shadow($color: colour-primary)
 {
     box-shadow:$shadow_size $shadow
 }
-@mixin box_shadow_modif($color: colour-primary)
-{
-    box-shadow:$shadow_size $shadow_modif;
-}
+
 @mixin degrade {
     background: linear-gradient(150deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
 }
-@mixin lighter_degrade {
-    background: linear-gradient(150deg, rgba(255,121,223,1) 30%, rgba(176,119,255,1) 98%);
-}
+
 @mixin color_heart {
     color: rgb(255,121,223);
 
