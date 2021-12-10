@@ -10,7 +10,7 @@ $shadow_btn :rgb(0,0,0,0.10);
 $shadow :rgb(0,0,0,0.10);
 $shadow_size :2px 2px 2px 2px;
 $shadow_modif :rgb(0,0,0,0.40);
-
+$tertiaire : #99E2D0;
 @mixin box_shadow($color: colour-primary)
 {
     box-shadow:$shadow_size $shadow
