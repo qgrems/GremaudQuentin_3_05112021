@@ -4,29 +4,15 @@
 @import "./layouts/bem";
 @import "./pages/page";
 
-delay-1{
-    animation-delay: .1s;
-}
-delay-2{
-    animation-delay: .2s;
-}
-delay-3{
-    animation-delay: .3s;
-}
-delay-4{
-    animation-delay: .4s;
-}
-delay-5{
-    animation-delay: .5s; 
-}
-delay-6{
-    animation-delay: .6s;
-}
-delay-7{
-    animation-delay: .7s;
-}
-delay-8{
-    animation-delay: .8s;
+@keyframes retro {
+    0%{
+        transform: translateY(30%);
+        opacity :0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .arrow
 {
@@ -38,7 +24,18 @@ delay-8{
 }
 
 
-
+h3{
+    position: relative;
+    &::after{
+        content:"";
+        height: 3px;
+        width: 40px;
+        background-color: $tertiaire;
+        position: absolute;
+        top: 45px;
+        left: 17px;
+    }
+}
 
 .size_btn_commander
 {
@@ -96,10 +93,19 @@ delay-8{
             margin-bottom: 20px;
             background-color: white;
             overflow: hidden;
+           
+            -webkit-animation: retro 1s  ;
             &:hover .menu__block_check{
                 transform-origin: right;
                 transition:  1000ms;
-               margin-right: 0;
+                margin-right: 0;
+
+            }
+                            
+            &:hover .menu__rounded
+            {
+                    transition:  1000ms;
+                     transform: rotate(360deg);
             }
         }
         &__margin_price

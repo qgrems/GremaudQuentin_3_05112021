@@ -210,6 +210,10 @@
 
   &__margin_title {
     padding: 20px; } 
+    
+  &__number_color {
+    color: $number_color;
+  }
 }
 .color_background_card_filter:hover {
   background: $dark_purple; }
