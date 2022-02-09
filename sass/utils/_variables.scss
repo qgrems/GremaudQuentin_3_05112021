@@ -12,6 +12,7 @@ $shadow_size :2px 2px 2px 2px;
 $shadow_modif :rgb(0,0,0,0.40);
 $tertiaire : #99E2D0;
 $number_color:white;
+$background_fonctionnement:#F1E9FF;
 @mixin box_shadow($color: colour-primary)
 {
     box-shadow:$shadow_size $shadow

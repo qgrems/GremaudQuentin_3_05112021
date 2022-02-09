@@ -64,6 +64,14 @@
     {
      background-color: $beige;
     }
+    &:hover
+    {
+      background-color: $background_fonctionnement;
+    }
+    &:hover i
+    {
+      color: $purple;
+    }
    }
 
   .card {
