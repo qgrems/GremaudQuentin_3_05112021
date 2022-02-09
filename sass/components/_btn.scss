@@ -5,7 +5,7 @@
   {
     transition-duration: 1000ms;
     background-color: darken($shadow, 95);
-    background: linear-gradient(150deg, rgba(255,121,223,1) 10%, rgba(176,119,255,1)78%);
+    background: linear-gradient(180deg, rgba(255,121,223,1) 20%, rgba(176,119,255,1)88%);
   }
   color: $white;
   border: none; 
@@ -25,27 +25,31 @@
     margin-right: 50px;
     mix-blend-mode:normal;
   .fas{
+    color: transparent;
     position: absolute;
     scale: 0;
     font-size: 19px;
+    
   }
   .far{
     position: absolute;
     transform-origin: bottom;
     font-size: 20px;
   }
+  
   &:hover
   {
-    transition-duration: 1000ms;
-    @include color_background_heart;
     .far{
       scale: 0;
     }    
     .fas{
-      scale: 1;
+      transition-duration:  1500ms;
+      transform: scale(1.2,1.2);
+      opacity:1;
       position: absolute;
-    }
-  }
+      @include color_background_heart
+    } 
+  }  
 }
 .card {
   @include  box_shadow($shadow);
@@ -63,14 +67,6 @@
     &__color
     {
      background-color: $beige;
-    }
-    &:hover
-    {
-      background-color: $background_fonctionnement;
-    }
-    &:hover i
-    {
-      color: $purple;
     }
    }
 

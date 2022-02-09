@@ -207,12 +207,21 @@
      /*Fonctionnement*/
 .block_fonctionnement {
   padding-top: 35px; 
-
   &__margin_title {
     padding: 20px; } 
     
   &__number_color {
     color: $number_color;
+  }
+}
+.card_filter_fonctionnement{
+  &:hover
+  {
+    background-color: $background_fonctionnement;
+  }
+  &:hover i
+  {
+    color: $purple;
   }
 }
 .color_background_card_filter:hover {

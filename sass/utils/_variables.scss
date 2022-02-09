@@ -12,14 +12,14 @@ $shadow_size :2px 2px 2px 2px;
 $shadow_modif :rgb(0,0,0,0.40);
 $tertiaire : #99E2D0;
 $number_color:white;
-$background_fonctionnement:#F1E9FF;
+$background_fonctionnement:#E7D8FF;
 @mixin box_shadow($color: colour-primary)
 {
     box-shadow:$shadow_size $shadow
 }
 
 @mixin degrade {
-    background: linear-gradient(150deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
+    background: linear-gradient(180deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
 }
 @mixin color_background_heart {
     background-image: linear-gradient(150deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
