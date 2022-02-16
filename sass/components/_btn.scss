@@ -156,8 +156,10 @@
       flex-wrap: wrap;
       display: flex;
       justify-content: space-around;
-      align-items: center;}
+      align-items: center;
     }
+
+  }
     .card {
       border-radius: 20px;
       background-color: $white;

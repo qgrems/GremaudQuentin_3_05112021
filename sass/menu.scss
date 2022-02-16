@@ -4,6 +4,8 @@
 @import "./layouts/bem";
 @import "./pages/page";
 
+
+
 @keyframes retro {
     0%{
         transform: translateY(30%);
@@ -96,7 +98,7 @@ h3{
             overflow: hidden;
             text-overflow: ellipsis;
            
-            -webkit-animation: retro 1s  ;
+            -webkit-animation: retro 2s  ;
             &:hover .menu__block_check{
                 transform-origin: right;
                 transition:  1000ms;
@@ -113,16 +115,18 @@ h3{
         {
             margin-left: auto;
             padding: 1rem;
+            margin-top: 30px;
         }
         &__block_check
         {
             width: 5rem;
+            min-width: 5rem;
             height: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #99E2D0;
-            margin-top: -55px;
+            margin-top: -10px;
             margin-right: -5rem;
             border-radius: 0 1rem 1rem 0;
         }
@@ -163,7 +167,7 @@ h3{
         width: 48%;
         margin: 5px;
     }
-    .card_picture
+    .card_picture_menu
     {
         width: 100%;
         max-height: 400px;
@@ -177,7 +181,7 @@ h3{
         width: 30%;
         margin: 5px;
     }
-    .card_picture
+    .card_picture_menu
     {
         width: 100%;
         height: 500px; 
@@ -201,4 +205,22 @@ h3{
         justify-content: space-between;
         align-items: center;
     }
+}
+@media all and (max-width:690px)
+{
+    .card_picture_menu
+    {
+        width: 100%;
+        height: 300px; 
+        object-fit: cover;
+    }
+}
+
+.menu_text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
 }
