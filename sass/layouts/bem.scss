@@ -19,6 +19,10 @@
 
     .footer {
         background-color: $dark_grey; 
+        &__list
+        {
+          min-width: 250px;
+        }
         &__logo_cook{
           font-size: 12px;
           margin-right: 9px;
@@ -34,7 +38,7 @@
 ul {
   list-style: none; }
 
-ul.footer_list > li > a {
+ul.footer__list > li > a {
   color:$white;
   text-decoration: none;
   padding: 20px;}
