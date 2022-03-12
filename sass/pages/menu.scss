@@ -1,8 +1,8 @@
-@import "./utils/variables";
-@import "./base/fondations";
-@import "./components/btn";
-@import "./layouts/bem";
-@import ".page";
+@import "../utils/variables";
+@import "../base/fondations";
+@import "../components/btn";
+@import "../layouts/bem";
+@import "./page";
 
 
 
@@ -24,8 +24,6 @@
     top: 23px;
     position: absolute;
 }
-
-
 h3{
     position: relative;
     &::after{
@@ -66,7 +64,6 @@ h3{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 5px;
         }
         &__title
         {
@@ -98,7 +95,7 @@ h3{
             overflow: hidden;
             text-overflow: ellipsis;
            
-            -webkit-animation: retro 2s  ;
+            -webkit-animation: retro 2s ;
             &:hover .menu__block_check{
                 transform-origin: right;
                 transition:  1000ms;
@@ -126,7 +123,7 @@ h3{
             justify-content: center;
             align-items: center;
             background-color: #99E2D0;
-            margin-top: -10px;
+            margin-top: -1px;
             margin-right: -5rem;
             border-radius: 0 1rem 1rem 0;
         }

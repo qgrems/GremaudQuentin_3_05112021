@@ -17,7 +17,10 @@ $background_fonctionnement:#E7D8FF;
 {
     box-shadow:$shadow_size $shadow
 }
-
+@mixin box_shadow_modif($color: colour-primary)
+{
+    box-shadow:$shadow_size $shadow_modif
+}
 @mixin degrade {
     background: linear-gradient(180deg, rgba(255,121,223,1) 0%, rgba(176,119,255,1) 68%);
 }

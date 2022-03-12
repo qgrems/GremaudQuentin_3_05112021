@@ -6,6 +6,7 @@
     transition-duration: 1000ms;
     background-color: darken($shadow, 95);
     background: linear-gradient(180deg, rgba(255,121,223,1) 20%, rgba(176,119,255,1)88%);
+    @include box_shadow_modif;
   }
   color: $white;
   border: none; 
@@ -29,21 +30,19 @@
     position: absolute;
     scale: 0;
     font-size: 19px;
-    
   }
   .far{
     position: absolute;
     transform-origin: bottom;
     font-size: 20px;
   }
-  
   &:hover
   {
     .far{
-      scale: 0;
+      opacity: 0;
     }    
     .fas{
-      transition-duration:  1500ms;
+      transition-duration: 1500ms;
       transform: scale(1.2,1.2);
       opacity:1;
       position: absolute;
@@ -84,9 +83,11 @@
   }
     .footer_block {
       width: 68%;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
+     
       &__logo {
         font-family: 'Shrikhand', cursive;
         color: $white;
