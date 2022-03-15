@@ -157,53 +157,7 @@
     z-index: -10;
   }
 }
-@keyframes loading-page
-{
-  0% {
-    background-color: white;
-    opacity: 0;
-  }
-  10% {
-    background-color: white;
-    opacity: 0.1;
-  }
-  20% {
-    background-color: white;
-    opacity: 0.2;
-  }
-  30% {
-    background-color: white;
-    opacity: 0.3;
-  }
-  40%{
-      background-color: white;
-      opacity: .4;
-  }
-  50% {
-    background-color: white;
-    opacity: .5;
-  }
-  60% {
-    background-color: white;
-    opacity: .6 ;
-  }
-  70% {
-    background-color: white;
-    opacity: 0.7;
-  }
-  80% {
-    background-color: white;
-    opacity: 0.8;
-  }
-  90% {
-    background-color: white;
-    opacity: 0.7;
-  }
-  100% {
-    background-color: white;
-    opacity: 1;
-  }
-}
+
 
 
 .size_location {

@@ -17,7 +17,9 @@
     align-items: center; }
 
     .footer {
-      height: auto;
+      width: 100%;
+      height: 17%;
+      position: absolute;
       display: flex;
       background-color: $dark_grey; 
         &__list
