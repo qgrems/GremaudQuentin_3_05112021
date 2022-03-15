@@ -55,7 +55,6 @@
 .card__heart .fas {
   color: transparent;
   position: absolute;
-  scale: 0;
   font-size: 19px;
 }
 .card__heart .far {
@@ -214,7 +213,7 @@
     font-family: "Shrikhand", cursive;
     color: #ffffff;
     font-size: 1.3em;
-    margin-left: 20px;
+    margin-left: -20px;
     margin-bottom: 10px;
   }
 }
@@ -239,7 +238,9 @@
 }
 
 .footer {
-  height: auto;
+  width: 100%;
+  height: 17%;
+  position: absolute;
   display: flex;
   background-color: #3b3b3b;
 }
@@ -439,52 +440,6 @@ a {
   100% {
     opacity: 0;
     z-index: -10;
-  }
-}
-@keyframes loading-page {
-  0% {
-    background-color: white;
-    opacity: 0;
-  }
-  10% {
-    background-color: white;
-    opacity: 0.1;
-  }
-  20% {
-    background-color: white;
-    opacity: 0.2;
-  }
-  30% {
-    background-color: white;
-    opacity: 0.3;
-  }
-  40% {
-    background-color: white;
-    opacity: 0.4;
-  }
-  50% {
-    background-color: white;
-    opacity: 0.5;
-  }
-  60% {
-    background-color: white;
-    opacity: 0.6;
-  }
-  70% {
-    background-color: white;
-    opacity: 0.7;
-  }
-  80% {
-    background-color: white;
-    opacity: 0.8;
-  }
-  90% {
-    background-color: white;
-    opacity: 0.7;
-  }
-  100% {
-    background-color: white;
-    opacity: 1;
   }
 }
 .size_location {
@@ -660,7 +615,6 @@ a {
 .card__heart .fas {
   color: transparent;
   position: absolute;
-  scale: 0;
   font-size: 19px;
 }
 .card__heart .far {
@@ -819,7 +773,7 @@ a {
     font-family: "Shrikhand", cursive;
     color: #ffffff;
     font-size: 1.3em;
-    margin-left: 20px;
+    margin-left: -20px;
     margin-bottom: 10px;
   }
 }
@@ -844,7 +798,9 @@ a {
 }
 
 .footer {
-  height: auto;
+  width: 100%;
+  height: 17%;
+  position: absolute;
   display: flex;
   background-color: #3b3b3b;
 }
@@ -1046,52 +1002,6 @@ a {
     z-index: -10;
   }
 }
-@keyframes loading-page {
-  0% {
-    background-color: white;
-    opacity: 0;
-  }
-  10% {
-    background-color: white;
-    opacity: 0.1;
-  }
-  20% {
-    background-color: white;
-    opacity: 0.2;
-  }
-  30% {
-    background-color: white;
-    opacity: 0.3;
-  }
-  40% {
-    background-color: white;
-    opacity: 0.4;
-  }
-  50% {
-    background-color: white;
-    opacity: 0.5;
-  }
-  60% {
-    background-color: white;
-    opacity: 0.6;
-  }
-  70% {
-    background-color: white;
-    opacity: 0.7;
-  }
-  80% {
-    background-color: white;
-    opacity: 0.8;
-  }
-  90% {
-    background-color: white;
-    opacity: 0.7;
-  }
-  100% {
-    background-color: white;
-    opacity: 1;
-  }
-}
 .size_location {
   width: 100%;
   height: 40px;
@@ -1214,7 +1124,7 @@ a {
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
@@ -1392,6 +1302,10 @@ h3::after {
   justify-content: space-between;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
